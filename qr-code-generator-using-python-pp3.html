@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <meta name="description" content="">
+  
+  <meta name="keywords" content="HTML, CSS, JavaScript, Python, CSS tricks, Javascript">
+  <meta name="author" content="Atul Kumar Singh">  
+  
+  <title>QR code Generator using python.</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu menu1 cid-sUkV7XfysS" once="menu" id="menu1-a1">
+    
+
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-primary display-2" href="https://www.codelikenull.com"><font color="white">code </font>likenull<br></a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-white display-4" href="https://mobiri.se" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Categories</a><div class="dropdown-menu" aria-labelledby="dropdown-undefined"><a class="dropdown-item text-white display-4" href="htmlposts.html">Html<br></a><a class="dropdown-item text-white display-4" href="blog.html">Blog</a><a class="show dropdown-item text-white display-4" href="python.html">Python</a><a class="show dropdown-item text-white text-primary display-4" href="java.html">Java</a></div></li><li class="nav-item"><a class="nav-link link text-white display-4" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link link text-white display-4" href="privacy.html">Privacy<br></a>
+                    </li></ul>
+                <div class="icons-menu">
+                    <a class="iconfont-wrapper" href="https://discord.com/channels/866247553379860490/866247553379860493" target="_blank">
+                        <span class="p-2 mbr-iconfont socicon-discord socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper" href="https://twitter.com/like_null" target="_blank">
+                        <span class="p-2 mbr-iconfont socicon-twitter socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper" href="https://www.instagram.com/codelikenull/" target="_blank">
+                        <span class="p-2 mbr-iconfont socicon-instagram socicon"></span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-sUWhMwAFJQ" id="content5-a2">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                <font color="white" size="4px">
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-2"><strong>QR code Generator using python.</strong></h4>
+                <p class="mbr-text mbr-fonts-style display-7">Here we will creator a QR code generator using python. It will be easy to code and use. <br><br>So, we got two ways to do this first one is straightforward to code and the second one is also simple but a little bit time-consuming. And as usual you will find full code at the bottom of the post.<br><br><strong>Method 1.</strong><br></p><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin-bottom: 0px; line-height: 125%;"><span style="color: #6ab825; font-weight: bold">import</span> <span style="color: rgb(68, 127, 207); text-decoration-line: underline;">qrcode</span><br><span style="color: #d0d0d0">img</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">qrcode.make(</span><span style="color: #ed9d13">"www.codelikenull.com"</span><span style="color: #d0d0d0">)</span><br><span style="color: #d0d0d0">img.save(</span><span style="color: #ed9d13">"codelikenullQR.jpg"</span><span style="color: #d0d0d0">)</span><br></pre></div>
+<br>Yes, this is it. only 3 lines of code, first of you have to install "qrcode" so you can use pip or you can go to setting and then interpreter then click on add package to install this in IDE's.<br><br>This code will create an image name "codelikenullQR.jpg" which contains the link (www.codelikenull.com). So if you want to share with anyone else then you use this. Like this:-<br><p></p>
+            </font></div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="image3 cid-sUYUGqYUXR" id="image3-ab">
+    
+
+    
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-4">
+                <div class="image-wrapper">
+                    <img src="assets/images/codelikenullqr-330x330.jpg" alt="qr code">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-sUZ2XjtTQ7" id="content5-af">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                <font color="white" size="4px">
+                
+                <p class="mbr-text mbr-fonts-style display-7">Method 2.<br><br>The second method is a little bit typical but it also has its benefits. <br><br>In the second one, we will be using "Tkinter"(to make this QR code generator in GUI form) and "pyqrcode" you can install them using pip. After installing, use this code to import all the variables we need.<br><br></p><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin-bottom: 0px; line-height: 125%;"><span style="color: #6ab825; font-weight: bold">from</span> <span style="color: rgb(68, 127, 207); text-decoration-line: underline;">tkinter</span> <span style="color: #6ab825; font-weight: bold">import</span> <span style="color: #d0d0d0">*</span><br><span style="color: #6ab825; font-weight: bold">from</span> <span style="color: rgb(68, 127, 207); text-decoration-line: underline;">tkinter</span> <span style="color: #6ab825; font-weight: bold">import</span> <span style="color: #d0d0d0">messagebox</span><br><span style="color: #6ab825; font-weight: bold">import</span> <span style="color: rgb(68, 127, 207); text-decoration-line: underline;">pyqrcode</span><br></pre></div>
+<br>And for setting up Tkinter we will use this code:-<br><br><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin-bottom: 0px; line-height: 125%;"><span style="color: #d0d0d0">ws</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">Tk()</span><br><span style="color: #d0d0d0">ws.title(</span><span style="color: #ed9d13">"QR code"</span><span style="color: #d0d0d0">)</span><br><span style="color: #d0d0d0">ws.config(bg=</span><span style="color: #ed9d13">'#46c768'</span><span style="color: #d0d0d0">)</span><br></pre></div>
+<br>Yep, you can guess this is for decoration also.<br><br>Now we will create a function named "generate_QR" which will utilize "pyqrcode" and uses input to generate a QR code which will be displayed to the user using Tkinter later.<br><br><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin-bottom: 0px; line-height: 125%;"><span style="color: #6ab825; font-weight: bold">def</span> <span style="color: #447fcf">generate_QR</span><span style="color: #d0d0d0">():</span><br>    <span style="color: #6ab825; font-weight: bold">if</span> <span style="color: #24909d">len</span><span style="color: #d0d0d0">(user_input.get())</span> <span style="color: #d0d0d0">!=</span> <span style="color: #3677a9">0</span><span style="color: #d0d0d0">:</span><br>        <span style="color: #6ab825; font-weight: bold">global</span> <span style="color: #d0d0d0">qr,</span> <span style="color: #d0d0d0">img</span><br>        <span style="color: #d0d0d0">qr</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">pyqrcode.create(user_input.get())</span><br>        <span style="color: #d0d0d0">img</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">BitmapImage(data=qr.xbm(scale=</span><span style="color: #3677a9">8</span><span style="color: #d0d0d0">))</span>
+<br>    <span style="color: #6ab825; font-weight: bold">else</span><span style="color: #d0d0d0">:</span><br>        <span style="color: #d0d0d0">messagebox.showwarning(</span><span style="color: #ed9d13">'warning'</span><span style="color: #d0d0d0">,</span> <span style="color: #ed9d13">'All Fields are Required!'</span><span style="color: #d0d0d0">)</span>
+<br>    <span style="color: #6ab825; font-weight: bold">try</span><span style="color: #d0d0d0">:</span><br>        <span style="color: #d0d0d0">display_code()</span>
+<br>    <span style="color: #6ab825; font-weight: bold">except</span><span style="color: #d0d0d0">:</span><br>        <span style="color: #6ab825; font-weight: bold">pass</span><br></pre></div>
+<br>Here, we have used bitmap-image to create QR codes. Now we will create a new function to display QR codes.<br><br><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin-bottom: 0px; line-height: 125%;"><span style="color: #6ab825; font-weight: bold">def</span> <span style="color: #447fcf">display_code</span><span style="color: #d0d0d0">():</span><br>    <span style="color: #d0d0d0">img_lbl.config(image=img)</span><br>    <span style="color: #d0d0d0">output.config(text=</span><span style="color: #ed9d13">"QR code of "</span> <span style="color: #d0d0d0">+</span> <span style="color: #d0d0d0">user_input.get())</span><br></pre></div>
+<br>And now let's finish the code with connecting functions to Tkinter.<br><br><div style="background: #202020; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin-bottom: 0px; line-height: 125%;"><span style="color: #d0d0d0">lbl</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">Label(</span><br>    <span style="color: #d0d0d0">ws,</span><br>    <span style="color: #d0d0d0">text=</span><span style="color: #ed9d13">"Enter message or URL"</span><span style="color: #d0d0d0">,</span><br>    <span style="color: #d0d0d0">bg=</span><span style="color: #ed9d13">'#46c768'</span><br><span style="color: #d0d0d0">)</span>
+<br><span style="color: #d0d0d0">lbl.pack()</span><br>
+<br><span style="color: #d0d0d0">user_input</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">StringVar()</span><br><span style="color: #d0d0d0">entry</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">Entry(</span><br>    <span style="color: #d0d0d0">ws,</span>
+    <span style="color: #d0d0d0">textvariable=user_input</span><br><span style="color: #d0d0d0">)</span>
+<br><span style="color: #d0d0d0">entry.pack(padx=</span><span style="color: #3677a9">60</span><span style="color: #d0d0d0">)</span><br>
+<br><span style="color: #d0d0d0">button</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">Button(</span><br>    <span style="color: #d0d0d0">ws,</span>
+    <span style="color: #d0d0d0">text=</span><span style="color: #ed9d13">"generate_QR"</span><span style="color: #d0d0d0">,</span><br>    <span style="color: #d0d0d0">width=</span><span style="color: #3677a9">25</span><span style="color: #d0d0d0">,</span><br>    <span style="color: #d0d0d0">command=generate_QR</span><br><span style="color: #d0d0d0">)</span>
+<br><span style="color: #d0d0d0">button.pack(pady=</span><span style="color: #3677a9">10</span><span style="color: #d0d0d0">)</span>
+<br><span style="color: #d0d0d0">img_lbl</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">Label(</span><br>    <span style="color: #d0d0d0">ws,</span><br>    <span style="color: #d0d0d0">bg=</span><span style="color: #ed9d13">'#fff'</span><span style="color: #d0d0d0">)</span>
+<br><span style="color: #d0d0d0">img_lbl.pack()</span>
+<br><span style="color: #d0d0d0">output</span> <span style="color: #d0d0d0">=</span> <span style="color: #d0d0d0">Label(</span><br>    <span style="color: #d0d0d0">ws,</span>
+    <span style="color: #d0d0d0">text=</span><span style="color: #ed9d13">""</span><span style="color: #d0d0d0">,</span><br>    <span style="color: #d0d0d0">bg=</span><span style="color: #ed9d13">'#46c768'</span>
+<span style="color: #d0d0d0">)</span>
+<br><span style="color: #d0d0d0">output.pack()</span>
+<br><span style="color: #d0d0d0">ws.mainloop()</span><br></pre></div>
+<br>Now we have finished if you try to run this code a GUI will pop up and you have to input a web link or text to generate a QR code. This won't save the QR code like the previous code was doing but you can save these QR codes using file IO and other functions.&nbsp;Here is a screenshot of the GUI:-<br><p></p>
+            </font></div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="image3 cid-sUYV3z02UW" id="image3-ac">
+    
+
+    
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-4">
+                <div class="image-wrapper">
+                    <img src="assets/images/qrcodepostpp3-299x434.jpg" alt="qr code 2">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-sUYYvSIQSA" id="content5-ae">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                
+                <p class="mbr-text mbr-fonts-style display-7">Here is the full code:-</p><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin-bottom: 0px; line-height: 125%;"><span style="color: #e6db74">"""</span>
+<br><span style="color: #e6db74">import qrcode</span>
+<br><span style="color: #e6db74">img = qrcode.make("www.codelikenull.com")</span>
+<br><span style="color: #e6db74">img.save("codelikenullQR.jpg")</span>
+<br><span style="color: #e6db74">"""</span>
+<br><span style="color: #f92672">from</span> <span style="color: #f8f8f2">tkinter</span> <span style="color: #f92672">import</span> <span style="color: #f92672">*</span>
+<br><span style="color: #f92672">from</span> <span style="color: #f8f8f2">tkinter</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">messagebox</span>
+<br><span style="color: #f92672">import</span> <span style="color: #f8f8f2">pyqrcode</span>
+<br>
+<br><span style="color: #f8f8f2">ws</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">Tk()</span>
+<br><span style="color: #f8f8f2">ws</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">title(</span><span style="color: #e6db74">"QR code"</span><span style="color: #f8f8f2">)</span>
+<br><span style="color: #f8f8f2">ws</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">config(bg</span><span style="color: #f92672">=</span><span style="color: #e6db74">'#46c768'</span><span style="color: #f8f8f2">)</span>
+<br>
+<br>
+<br><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">generate_QR</span><span style="color: #f8f8f2">():</span>
+<br>    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">len(user_input</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">get())</span> <span style="color: #f92672">!=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">:</span>
+<br>        <span style="color: #66d9ef">global</span> <span style="color: #f8f8f2">qr,</span> <span style="color: #f8f8f2">img</span>
+<br>        <span style="color: #f8f8f2">qr</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">pyqrcode</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">create(user_input</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">get())</span>
+<br>        <span style="color: #f8f8f2">img</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">BitmapImage(data</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">qr</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">xbm(scale</span><span style="color: #f92672">=</span><span style="color: #ae81ff">8</span><span style="color: #f8f8f2">))</span>
+<br>    <span style="color: #66d9ef">else</span><span style="color: #f8f8f2">:</span>
+<br>        <span style="color: #f8f8f2">messagebox</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">showwarning(</span><span style="color: #e6db74">'warning'</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">'All Fields are Required!'</span><span style="color: #f8f8f2">)</span>
+<br>    <span style="color: #66d9ef">try</span><span style="color: #f8f8f2">:</span>
+<br>        <span style="color: #f8f8f2">display_code()</span>
+<br>    <span style="color: #66d9ef">except</span><span style="color: #f8f8f2">:</span>
+<br>        <span style="color: #66d9ef">pass</span>
+<br>
+<br>
+<br>
+<br><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">display_code</span><span style="color: #f8f8f2">():</span>
+<br>    <span style="color: #f8f8f2">img_lbl</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">config(image</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">img)</span>
+<br>    <span style="color: #f8f8f2">output</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">config(text</span><span style="color: #f92672">=</span><span style="color: #e6db74">"QR code of "</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">user_input</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">get())</span>
+<br>
+<br>
+<br><span style="color: #f8f8f2">lbl</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">Label(</span>
+<br>    <span style="color: #f8f8f2">ws,</span>
+<br>    <span style="color: #f8f8f2">text</span><span style="color: #f92672">=</span><span style="color: #e6db74">"Enter message or URL"</span><span style="color: #f8f8f2">,</span>
+<br>    <span style="color: #f8f8f2">bg</span><span style="color: #f92672">=</span><span style="color: #e6db74">'#46c768'</span>
+<br><span style="color: #f8f8f2">)</span>
+<br><span style="color: #f8f8f2">lbl</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pack()</span>
+<br>
+<br><span style="color: #f8f8f2">user_input</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">StringVar()</span>
+<br><span style="color: #f8f8f2">entry</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">Entry(</span>
+<br>    <span style="color: #f8f8f2">ws,</span>
+<br>    <span style="color: #f8f8f2">textvariable</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">user_input</span>
+<br><span style="color: #f8f8f2">)</span>
+<br><span style="color: #f8f8f2">entry</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pack(padx</span><span style="color: #f92672">=</span><span style="color: #ae81ff">60</span><span style="color: #f8f8f2">)</span>
+<br>
+<br><span style="color: #f8f8f2">button</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">Button(</span>
+<br>    <span style="color: #f8f8f2">ws,</span>
+<br>    <span style="color: #f8f8f2">text</span><span style="color: #f92672">=</span><span style="color: #e6db74">"generate_QR"</span><span style="color: #f8f8f2">,</span>
+<br>    <span style="color: #f8f8f2">width</span><span style="color: #f92672">=</span><span style="color: #ae81ff">25</span><span style="color: #f8f8f2">,</span>
+<br>    <span style="color: #f8f8f2">command</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">generate_QR</span>
+<br><span style="color: #f8f8f2">)</span>
+<br><span style="color: #f8f8f2">button</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pack(pady</span><span style="color: #f92672">=</span><span style="color: #ae81ff">10</span><span style="color: #f8f8f2">)</span>
+<br>
+<br><span style="color: #f8f8f2">img_lbl</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">Label(</span>
+<br>    <span style="color: #f8f8f2">ws,</span>
+<br>    <span style="color: #f8f8f2">bg</span><span style="color: #f92672">=</span><span style="color: #e6db74">'#fff'</span><span style="color: #f8f8f2">)</span>
+<br><span style="color: #f8f8f2">img_lbl</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pack()</span>
+<br><span style="color: #f8f8f2">output</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">Label(</span>
+<br>    <span style="color: #f8f8f2">ws,</span>
+<br>    <span style="color: #f8f8f2">text</span><span style="color: #f92672">=</span><span style="color: #e6db74">""</span><span style="color: #f8f8f2">,</span>
+<br>    <span style="color: #f8f8f2">bg</span><span style="color: #f92672">=</span><span style="color: #e6db74">'#46c768'</span>
+<br><span style="color: #f8f8f2">)</span>
+<br><span style="color: #f8f8f2">output</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">pack()</span>
+<br>
+<br><span style="color: #f8f8f2">ws</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">mainloop()</span>
+<br></pre></div>
+<br><p></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="social2 cid-sUWhMxnJYp" id="share2-a5">
+    
+     
+    
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-12">
+                <h3 class="mbr-section-title align-center mb-3 mbr-fonts-style display-2">
+                    <strong>Share this Page!</strong>
+                </h3>
+                <div>
+                    <div class="mbr-social-likes align-center" data-counters="false">
+                        <span class="btn btn-social facebook m-2">
+                            <i class="socicon socicon-facebook"></i>
+                        </span>
+                        <span class="btn btn-social twitter m-2">
+                            <i class="socicon socicon-twitter"></i>
+                        </span>
+                        
+                        
+                        <span class="btn btn-social pinterest m-2">
+                            <i class="socicon socicon-pinterest"></i>
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="cid-sUWhMxz563" id="design-block-a6">
+  
+    
+
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1185 248">
+      <circle cx="76" cy="121.1" r="20" class="top"></circle>
+      <circle cx="870" cy="201.1" r="11" class="top"></circle>
+      <circle cx="814.5" cy="165.6" r="24.5" class="top"></circle>
+      <path d="M0 0v17.7c22.7 14.8 53 31.9 90.7 51.5 150.8 78 322 116.6 424.8 69.3 102.9-47.4 138-69.3 210.8-69.3s118.3 48.6 219.5 38.3 76.3-59.3 188.7-59.3c18.9 0 35.5 2.6 50.5 6.8V0H0z" class="top"></path>
+  	</svg>
+
+	
+  
+</section>
+
+<section data-bs-version="5.1" class="header19 cid-sUWhMxJ5aZ" id="header19-a7">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container">
+            <div class="col-md-12 align-center">
+                
+                <p class="mbr-text mbr-white mbr-fonts-style display-5"><strong>Browse from our featured topics</strong></p>
+                
+
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="card-box align-center">
+                                <a href="htmlposts.html"><span class="mbr-iconfont mbri-code"></span></a>
+                                <h4 class="card-title align-center mbr-black mbr-fonts-style display-5"><strong><a href="htmlposts.html" class="text-white text-primary">HTML/CSS</a></strong></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="card-box align-center">
+                                <a href="blog.html"><span class="mbr-iconfont mbri-credit-card"></span></a>
+                                <h4 class="card-title align-center mbr-black mbr-fonts-style display-5"><strong><a href="blog.html" class="text-white text-primary">Blog</a></strong></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="card-box align-center">
+                                <a href="python.html"><span class="mbr-iconfont mbri-browse"></span></a>
+                                <h4 class="card-title align-center mbr-black mbr-fonts-style display-5"><strong><a href="page5.html" class="text-white">Python</a></strong></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card-wrapper">
+                            <div class="card-box align-center">
+                                <a href="page6.html"><span class="mbr-iconfont mbri-drag-n-drop2"></span></a>
+                                <h4 class="card-title align-center mbr-black mbr-fonts-style display-5"><strong><a href="page6.html" class="text-white">JAVA</a></strong></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="footer7 cid-sV5rUXDafc" once="footers" id="footer7-ar">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">
+                    © Copyright 2022 <a href="index.html" class="text-info">codelikenull </a>- All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </div>
+</section><section id="top-1" hidden><a href="https://mobirise.site"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>  <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/sociallikes/social-likes.js"></script>  <script src="assets/vimeoplayer/player.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+  
+<input name="cookieData" type="hidden" data-cookie-customDialogSelector='null' data-cookie-colorText='#fafafa' data-cookie-colorBg='rgba(45, 45, 45, 0.99)' data-cookie-textButton='Agree' data-cookie-colorButton='' data-cookie-colorLink='#e065e6' data-cookie-underlineLink='true' data-cookie-text="We use cookies to give you the best experience. By visiting, you agree to our policy. Read our <a href='privacy.html'>cookie policy</a>.">
+    <input name="animation" type="hidden">
+  </body>
+</html>

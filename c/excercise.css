@@ -1,0 +1,142 @@
+body {
+  background-image: url(./img/backexe.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+}
+            * {
+              box-sizing: border-box;
+              
+          }
+          
+          .imge {
+              width: 87%;
+              max-width: 800px;
+              height: auto;               
+              border-radius: 10%;
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              transform: translateY(-25%);             
+      
+          }
+          .card{
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              
+              background-color: #edf1fe;
+              height: auto;
+              width: 90%;
+              border-radius: 3%;
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+              margin-top: 13%;
+          }
+          .card:hover{
+              box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
+          }
+          .container {
+              transform: translateY(-20%);
+              position: relative;
+              font-size: 1.2rem;
+              width: 95%;
+          }
+          @media only screen and (min-width: 600px){
+              .card {
+                  width: 50%;
+                  margin-top: 11%;
+              }
+              .imge {
+                  width: 70%;
+              }
+              
+          }
+          @media only screen and (max-width: 299px) {
+              .container {
+              transform: translateY(-1%);
+              position: relative;
+              }
+              
+              
+          }
+.base-timer {
+    position: relative;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .base-timer__svg {
+    transform: scaleX(-1);
+  }
+  
+  .base-timer__circle {
+    fill: none;
+    stroke: none;
+  }
+  
+  .base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: grey;
+  }
+  
+  .base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+  }
+  
+  .base-timer__path-remaining.green {
+    color: rgb(136, 65, 184);
+  }
+  
+  .base-timer__path-remaining.orange {
+    color: orange;
+  }
+  
+  .base-timer__path-remaining.blue {
+    color: #7288d1;
+  }
+  
+  .base-timer__label {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+  }
+  
+.cus {
+  border-radius: 3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+.btn1 {
+  background-color: #9543c5;
+  width: 80%;
+}
+.btn2 {
+  width: 40%;
+  background-color: rgb(35, 129, 172);
+}
+.btn3 {
+  width: 40%;
+
+  background-color: rgb(230, 62, 62);
+}
+button:disabled,
+button[disabled]{
+  border: 1px solid #859688;
+  background-color: #94a198;
+  color: #666666;
+  box-shadow: none;
+  cursor: not-allowed;
+
+}

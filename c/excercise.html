@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Excercise
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="excercise.css">  
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            window.oncontextmenu = function () {
+                return false;
+            }
+            $(document).keydown(function (event) {
+                if (event.keyCode == 123) {
+                    return false;
+                }
+                else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+                    return false;
+                }
+            });
+        </script> 
+        
+ <script>
+
+  //Prevent Ctrl+S (and Ctrl+W for old browsers and Edge)
+document.onkeydown = function (e) {
+ e = e || window.event;//Get event
+
+ if (!e.ctrlKey) return;
+
+ var code = e.which || e.keyCode;//Get key code
+
+ switch (code) {
+     case 83://Block Ctrl+S
+     case 87://Block Ctrl+W -- Not work in Chrome and new Firefox
+         e.preventDefault();
+         e.stopPropagation();
+         break;
+ }
+};
+</script>
+    </head>
+    <body>
+        <div class="whole">
+        <center>   
+        <div class="card">
+            <img class="imge" src="./img/exe1.gif">
+            <div class="container">
+                <h3 style="color:rgb(80, 87, 94)">Excercise 1</h3>           
+                Jumping jacks exercise. Helps to increase blood circulations and to relax.
+                <br>
+                <br>                    
+                <div id="app"></div><br><br>
+                <button class="cus btn1" id="startb" onclick="startTimer()"><i class="fa fa-play"></i>  Start</button><br><br>
+                <a href="excercise2.html"><button class="cus btn2" id="next"><i class="fa fa-angle-double-right" aria-hidden="true"></i>  Next</button></a>  
+                <button class="cus btn3" id="restart"><i class="fa fa-repeat" aria-hidden="true"></i>  Restart</button>
+                    
+            </div>
+            <p><font color="gray">Complete this excercise to move on next.</font></p>
+            </div>
+        </div></center>
+        
+        
+    </body>
+    <script type="text/javascript">
+        // Credit: Mateusz Rybczonec
+document.getElementById("next").disabled = true;
+
+const FULL_DASH_ARRAY = 283;
+const WARNING_THRESHOLD = 15;
+const ALERT_THRESHOLD = 5;
+
+const COLOR_CODES = {
+  info: {
+    color: "green"
+  },
+  warning: {
+    color: "orange",
+    threshold: WARNING_THRESHOLD
+  },
+  alert: {
+    color: "blue",
+    threshold: ALERT_THRESHOLD
+  }
+};
+
+const TIME_LIMIT = 30;
+let timePassed = 0;
+let timeLeft = TIME_LIMIT;
+let timerInterval = null;
+let remainingPathColor = COLOR_CODES.info.color;
+
+document.getElementById("app").innerHTML = `
+<div class="base-timer">
+  <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <g class="base-timer__circle">
+      <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
+      <path
+        id="base-timer-path-remaining"
+        stroke-dasharray="283"
+        class="base-timer__path-remaining ${remainingPathColor}"
+        d="
+          M 50, 50
+          m -45, 0
+          a 45,45 0 1,0 90,0
+          a 45,45 0 1,0 -90,0
+        "
+      ></path>
+    </g>
+  </svg>
+  <span id="base-timer-label" class="base-timer__label">${formatTime(
+    timeLeft
+  )}</span>
+</div>
+`;
+
+
+
+function onTimesUp() {
+  clearInterval(timerInterval);
+  document.getElementById("next").disabled = false;
+  
+
+}
+
+function startTimer() {
+  document.getElementById("startb").disabled = true;
+
+  timerInterval = setInterval(() => {
+    timePassed = timePassed += 1;
+    timeLeft = TIME_LIMIT - timePassed;
+    document.getElementById("base-timer-label").innerHTML = formatTime(
+      timeLeft
+    );
+    setCircleDasharray();
+    setRemainingPathColor(timeLeft);
+
+    if (timeLeft === 0) {
+      onTimesUp();
+    }
+  }, 1000);
+}
+
+function formatTime(time) {
+  const minutes = Math.floor(time / 60);
+  let seconds = time % 60;
+
+  if (seconds < 10) {
+    seconds = `0${seconds}`;
+  }
+
+  return `${minutes}:${seconds}`;
+}
+
+function setRemainingPathColor(timeLeft) {
+  const { alert, warning, info } = COLOR_CODES;
+  if (timeLeft <= alert.threshold) {
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.remove(warning.color);
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.add(alert.color);
+  } else if (timeLeft <= warning.threshold) {
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.remove(info.color);
+    document
+      .getElementById("base-timer-path-remaining")
+      .classList.add(warning.color);
+  }
+}
+
+function calculateTimeFraction() {
+  const rawTimeFraction = timeLeft / TIME_LIMIT;
+  return rawTimeFraction - (1 / TIME_LIMIT) * (1 - rawTimeFraction);
+}
+
+function setCircleDasharray() {
+  const circleDasharray = `${(
+    calculateTimeFraction() * FULL_DASH_ARRAY
+  ).toFixed(0)} 283`;
+  document
+    .getElementById("base-timer-path-remaining")
+    .setAttribute("stroke-dasharray", circleDasharray);
+}
+    </script>
+
+</html>

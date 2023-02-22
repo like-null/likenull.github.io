@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tryit Yourself Code Likenull </title>
+    <meta name="description" content="Parallax effect, HTML CSS, CSS tricks, HTML+CSS+JavaScript">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Likenull">
+    <link rel="shortcut icon" type="image/jpg" href="./img/fav.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="editior.css">
+</head>
+
+<body>
+    <div id="ads-container">
+      <a href="https://www.codelikenull.com" title="codelikenull.com"><img src="./img/logocodelikenull.jpg" alt="logocodelikenull" class="responsive"></a>
+    </div>
+    <div id="editor-options">
+        <div id="editor-options-left">
+            <a href="https://codelikenull.com" title="codelikenull.com"><i class="fa fa-home" style="font-size: 30px;margin-right: 10px;color: #bf17e9 ;"></i></a>
+
+            <button title="Switch to Dark Mode" onclick="setDarkMode()" class="action-btns" style="width: 90px;">Dark Mode</button>
+            <button title="Switch to Light Mode" onclick="setLightMode()" class="action-btns" style="width: 90px;">Light Mode</button>
+            <button title="Run Program" onclick="getEditorCode()" class="action-btns" id="run-btn" style="width: 32px;"> <i class="fa fa-play"></i></button>
+        </div>
+        
+
+
+    </div>
+    <div id="parent">
+        <div id="left">
+            <div id="editor">
+                <script type="text/plain" style="display: block;" id="ace-1">
+<html>
+<head>
+</head>
+<body>
+</body>
+</html>
+ </script></div>
+        </div>
+
+        <div id="bar" title="Resize">
+
+        </div>
+        <div id="right">
+            <div id="frameWrapper">
+                <iframe src="" id="resultFrame" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script src="../ace-builds/src-noconflict/ace.js" type="text/javascript"></script> -->
+    <script src="editor-setup/ace.js"></script>
+    <script src="editior.js"></script>
+    
+</body>
+
+</html>

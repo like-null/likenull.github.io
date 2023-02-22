@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar ~ Tryit Yourself Code Likenull.</title>
+    <meta name="description" content="Responsive Navigation Bar, HTML CSS, CSS tricks, HTML+CSS+JavaScript">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Likenull">
+    <link rel="shortcut icon" type="image/jpg" href="./img/fav.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="editior.css">
+</head>
+
+<body>
+    <div id="ads-container">
+      <a href="https://www.codelikenull.com" title="codelikenull.com"><img src="./img/logocodelikenull.jpg" alt="logocodelikenull" class="responsive"></a>
+    </div>
+    <div id="editor-options">
+        <div id="editor-options-left">
+            <a href="https://www.codelikenull.com" title="codelikenull.com"><i class="fa fa-home" style="font-size: 30px;margin-right: 10px;color: #bf17e9 ;"></i></a>
+
+            <button title="Switch to Dark Mode" onclick="setDarkMode()" class="action-btns" style="width: 90px;">Dark Mode</button>
+            <button title="Switch to Light Mode" onclick="setLightMode()" class="action-btns" style="width: 90px;">Light Mode</button>
+            <button title="Run Program" onclick="getEditorCode()" class="action-btns" id="run-btn" style="width: 32px;"> <i class="fa fa-play"></i></button>
+        </div>
+        
+
+
+    </div>
+    <div id="parent">
+        <div id="left">
+            <div id="editor">
+                <script type="text/plain" style="display: block;" id="ace-1">
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <title>Responsive Navigation Bar</title>
+ </head>
+ <style>
+ html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+header {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #e065e6;
+}
+.brand {
+    font-size: 1.4rem;
+    color: #fff;
+    width: auto;
+    height: 100%;
+    float: left;
+    margin: 0 0 0 5%;
+    cursor: pointer;
+}
+
+.brand a,
+.brand a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.menu {
+    color: #fff;
+    cursor: pointer;
+    width: 60%;
+    height: 100%;
+    float: right;
+}
+.menu ul {
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;     
+    display: -moz-box;         
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.menu ul a {
+    width: 20%;
+    height: inherit;
+    color: #fff;
+    display: inline-block;
+}
+.menu ul a:hover {
+    background-color: #e085e6;
+    color: #fff;
+}
+#menuToggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: auto;
+    }
+    .menu ul {
+        display: block;
+        max-height: 0;
+      overflow: hidden;
+      -webkit-transition: max-height 0.3s;
+      -moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+      transition: max-height 0.3s;
+    }
+    .menu ul a {
+        text-align: left;
+        width: 100%;
+        height: 50px;
+        background-color: #e065e6;
+        padding: 1px 0px 20px 5%;
+    }
+    .menu-icon {
+        cursor: pointer;
+        width: 70px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 0.3%;
+        right: 0;
+    }
+    #menuToggle:checked ~ ul {
+        max-height: 350px;
+    }
+    .menu-icon i {
+        font-size: 1.7rem;
+    }
+}
+ </style>
+<body>
+    <header>
+        <figure class="brand">LOGO</figure>
+        <nav class="menu">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon"><i class="fa fa-bars"></i></label>
+            <ul>
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Likenull</li></a>
+                <a href="#"><li>About Us</li></a>
+                <a href="#"><li>Contact Us</li></a>
+                <a href="#"><li>Terms</li></a>
+            </ul>
+        </nav>
+    </header>
+  <center>
+  <h1> Resize me to toogle responsive bar.</h1>
+  </center>
+  </body>
+</html>
+
+
+</script></div>
+        </div>
+
+        <div id="bar" title="Resize">
+
+        </div>
+        <div id="right">
+            <div id="frameWrapper">
+                <iframe src="" id="resultFrame" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script src="../ace-builds/src-noconflict/ace.js" type="text/javascript"></script> -->
+    <script src="editor-setup/ace.js"></script>
+    <script src="editior.js"></script>
+    
+</body>
+
+</html>

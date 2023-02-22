@@ -1,0 +1,341 @@
+html , body{
+  scroll-behavior: smooth;
+  margin: 0;
+  padding:0;
+  width: 100%;
+  background: #fff;
+  overflow-x: hidden;	
+  
+  
+
+}
+
+.bodyzin{
+  background-image: url(./img/imag4.webp);
+  background-repeat: no-repeat 50% 50%;
+  background-size: auto;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.hero-image{
+  width: 100%;
+  background: url(./img/back1.webp) no-repeat 50% 50%;
+  height: 100vh;
+  background-size: cover;
+  position: absolute;
+
+}
+
+.parallax-el{
+  background: url(./img/foreground2.png) no-repeat 50% 50%;
+  background-size:contain;
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  top:40%;
+}
+
+.text{
+  background:url(./img/text1.png) no-repeat 50% 50%;
+  background-size: contain;
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  top:42%;
+}
+
+.clouds{
+  background: url(./img/clouds1.webp) no-repeat 50% 50%;
+  background-size:cover;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+.whitespace{
+  width:100%;
+  height:100vh;
+}
+
+
+@media only screen and (max-width: 520px){
+  .parallax-el{
+      background-size: cover;
+      height: 50%;
+  }
+
+  .img-container .row{
+      margin-left:0;
+      width: 100%
+  }
+
+  .whitespace{
+      height: 86vh;
+  }
+  .text{
+      width: 94%;
+      left: 3vw;
+      height:23vh;
+  }
+
+  .content{
+      padding:0;
+  }
+
+  .content-container{
+      padding-top:0;
+      text-align:center;
+  }
+  .img-small{
+      margin-top: 5px;
+  }
+
+}
+/* GLOBAL STYLES */
+.wrapper {
+
+/*This part is important for centering*/
+display: flex;
+align-items: center;
+justify-content: center;
+}
+/* DEMO-SPECIFIC STYLES */
+.typewriter h6 {
+font-size:3vw;
+color: black;
+font-family: monospace;
+overflow: hidden; /* Ensures the content is not revealed until the animation */
+border-right: .15em solid orange; /* The typwriter cursor */
+white-space: nowrap; /* Keeps the content on a single line */
+margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+letter-spacing: .15em; /* Adjust as needed */
+animation: 
+  typing 3.5s steps(30, end),
+  blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: #B4EC51 }
+}
+
+@media only screen and (max-width: 520px){
+.typewriter h6 {
+  font-size:5vw;
+  
+}		
+
+
+}
+
+[type=radio] {
+display: none;
+}
+
+#slider {
+height: 38vw;
+position: relative;
+perspective: 1520px;
+transform-style: preserve-3d;
+}
+
+#slider label {
+margin: auto;
+width: 66%;
+height: 100%;
+border-radius: 4px;
+position: absolute;
+left: 0; right: 0;
+cursor: pointer;
+transition: transform 0.4s ease;
+}
+
+#s1:checked ~ #slide4, #s2:checked ~ #slide5,
+#s3:checked ~ #slide1, #s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+transform: translate3d(-30%,0,-200px);
+}
+
+#s1:checked ~ #slide5, #s2:checked ~ #slide1,
+#s3:checked ~ #slide2, #s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+transform: translate3d(-15%,0,-100px);
+}
+
+#s1:checked ~ #slide1, #s2:checked ~ #slide2,
+#s3:checked ~ #slide3, #s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+transform: translate3d(0,0,0);
+}
+
+#s1:checked ~ #slide2, #s2:checked ~ #slide3,
+#s3:checked ~ #slide4, #s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+transform: translate3d(15%,0,-100px);
+}
+
+#s1:checked ~ #slide3, #s2:checked ~ #slide4,
+#s3:checked ~ #slide5, #s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+transform: translate3d(30%,0,-200px);
+}
+
+#slide1 { 
+background-image: url('./joke/joke1.png');
+background-size: cover;
+background-attachment: relative;
+background-position: center;
+}
+#slide2 { 
+background-image: url('./joke/joke2.png');
+background-size: cover;
+background-attachment: relative;
+background-position: center;
+}
+#slide3 { 
+background-image: url('./joke/joke3.png');
+background-size: cover;
+background-attachment: relative;
+background-position: center;
+}
+#slide4 { 
+background-image: url('./joke/joke4.png');
+background-size: 100%;
+background-attachment: relative;
+background-position: center;
+}
+#slide5 { 
+background-image: url('./joke/joke5.png');
+background-size: cover;
+background-attachment: relative;
+background-position: center;
+}
+
+@media only screen and (max-width: 520px){
+
+[type=radio] {
+display: none;
+}
+
+#slider {
+height: 45vw;
+position: relative;
+perspective: 1520px;
+transform-style: preserve-3d;
+}
+
+#slider label {
+margin: auto;
+width: 80%;
+height: 100%;
+border-radius: 4px;
+position: absolute;
+left: 0; right: 0;
+cursor: pointer;
+transition: transform 0.4s ease;
+}
+}
+.creator-block {
+  position: relative;
+  height: auto;
+  background-image: linear-gradient(315deg, #ee4040 0%, #f59f3c 74%);
+
+
+
+  
+}
+.imgmy {
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+@media only screen and (max-width: 620px){
+.imgmy{
+  width: 240px;
+  height: 240px;
+}
+
+}
+.contact-button {
+  width: 320px;
+  height: 80px;
+  background: #dfe6e9;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: .3s linear;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.contact-button:hover{
+  transform: scale(1.1);
+}
+.contact-button span{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #53be6e;
+  color: #f1f1f1;
+  text-align: center;
+  line-height: 80px;
+  z-index: 999;
+  transition: .6s linear;
+  border-radius: 40px;
+ 
+}
+.contact-button:hover span{
+  transform: translateX(-100%);
+  transition-delay: .3s;
+}
+.contact-button a {
+  flex: 1;
+  font-size: 26px;
+  margin-right: 20px;
+  color: #ee7e2d;
+  text-align: center;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: .3s linear;
+}
+.contact-button:hover a {
+  opacity: 1;
+  transform: translateX(0);
+}
+.contact-button a:nth-of-type(1){
+  transition-delay: 1s;
+}
+.contact-button a:nth-of-type(2){
+  transition-delay: .8s;
+}
+.contact-button a:nth-of-type(3){
+  transition-delay: .6s;
+}
+.contact-button a:nth-of-type(4){
+  transition-delay: .4s;
+}
+.unselect{
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
