@@ -1,9 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^codelikenull.com [NC]
-RewriteRule ^(.*)$ http://www.codelikenull.com/$1 [L,R=301]
-
-ErrorDocument 400 https://www.codelikenull.com
-ErrorDocument 401 https://www.codelikenull.com
-ErrorDocument 403 https://www.codelikenull.com
-ErrorDocument 404 https://www.codelikenull.com
-ErrorDocument 503 https://www.codelikenull.com
